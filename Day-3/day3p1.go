@@ -20,9 +20,9 @@ func main() {
 		var id, x, y, w, h int
 
 		fmt.Sscanf(str, "#%d @ %d,%d: %dx%d", &id, &x, &y, &w, &h)
-		for i := 0; i < w; i++ {
-			for j := 0; j < h; j++ {
-				area[x+i][y+j]++
+		for i := 0; i < h; i++ {
+			for j := 0; j < w; j++ {
+				area[x+j][y+i]++
 			}
 		}
 	}
